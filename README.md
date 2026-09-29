@@ -2,10 +2,13 @@
 
 **Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter**
 
-TRACE: Teacher Rollouts for Adaptive Closed-loop Execution. Preprint, 2026.
+TRACE: Teacher Rollouts for Adaptive Closed-loop Execution. 2026.
 
-Kowndinya Boyalakuntla, Ajinkya Pawar, Abdeslam Boularias, Jingjin Yu  
-Rutgers University.
+Kowndinya Boyalakuntla¹, Ajinkya Pawar², Abdeslam Boularias¹, Jingjin Yu¹
+
+¹ Department of Computer Science, Rutgers University, 08854 New Brunswick, USA.
+
+² University of Michigan.
 
 [Website](https://trace-retrieval.github.io/) ·
 [Paper](static/paper/trace.pdf) ·

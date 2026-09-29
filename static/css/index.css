@@ -197,9 +197,11 @@ h3{font-size:23px;letter-spacing:-.4px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 
-/* Author attribution and citation for the public preprint release. */
+/* Author attribution and citation. */
 .publication-authors{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;margin:22px auto 0;font-size:17px;color:var(--primary);font-weight:500}
+.publication-authors sup{font-size:.65em;line-height:0;vertical-align:super;margin-left:2px}
 .publication-authors a:hover{text-decoration:underline;text-underline-offset:4px}
-.publication-affiliation{margin-top:7px;color:var(--muted);font-size:15px}
+.publication-affiliation{margin-top:7px;color:var(--muted);font-size:15px;line-height:1.5}
+.publication-affiliation>span{display:block}
 .citation-section{padding-top:24px}
 .citation-text{margin-top:20px;padding:22px;border:1px solid var(--line);border-radius:8px;background:white;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.6}
