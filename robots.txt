@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://kowndinya2000.github.io/trace-site/sitemap.xml
+Sitemap: https://trace-27.github.io/sitemap.xml
