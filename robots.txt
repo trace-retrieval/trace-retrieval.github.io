@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://trace-27.github.io/sitemap.xml
+Sitemap: https://trace-retrieval.github.io/sitemap.xml

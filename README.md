@@ -7,7 +7,7 @@ TRACE: Teacher Rollouts for Adaptive Closed-loop Execution. Preprint, 2026.
 Kowndinya Boyalakuntla, Ajinkya Pawar, Abdeslam Boularias, Jingjin Yu  
 Rutgers University.
 
-[Website](https://trace-27.github.io/) ·
+[Website](https://trace-retrieval.github.io/) ·
 [Paper](static/paper/trace.pdf) ·
 [Code](https://github.com/Kowndinya2000/trace-code) ·
 [Data](https://huggingface.co/datasets/Kowndi/trace)
