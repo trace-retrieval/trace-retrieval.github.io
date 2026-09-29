@@ -1,0 +1,14 @@
+{
+  "project": "trace",
+  "duration_s": 179.0,
+  "frames": 5370,
+  "changed_interval_s": [
+    0,
+    4
+  ],
+  "unchanged_frames_after_opening": 5250,
+  "audio_packets_unchanged": true,
+  "source": "/common/home/kb1204/Documents/rewire-icra27/release/org_site/static/video/trace-overview.mp4",
+  "source_sha256": "3e8a4a41cb89b37c6cc68c35f325c1d98a907ce78f72a9bed8ef59755d2bb504",
+  "public_sha256": "5efca1c7aa59fb70bb6e656b15be97f6039ad18df9a3095c2fd798bb88eeecdf"
+}
