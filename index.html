@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TRACE: Teacher Rollouts for Adaptive Closed-loop Execution. Plan-conditioned imitation for robust object retrieval under self-occlusion in dense clutter.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#772583">
+  <meta property="og:title" content="TRACE — Plan once. Adapt throughout.">
+  <meta property="og:description" content="Plan-conditioned imitation for object retrieval under self-occlusion. Preprint · 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kowndinya2000.github.io/trace-site/">
+  <meta property="og:image" content="https://kowndinya2000.github.io/trace-site/static/images/video-poster.webp">
+  <link rel="canonical" href="https://kowndinya2000.github.io/trace-site/">
+  <meta name="citation_title" content="Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter">
+  <meta name="citation_author" content="Kowndinya Boyalakuntla">
+  <meta name="citation_author" content="Ajinkya Pawar">
+  <meta name="citation_author" content="Abdeslam Boularias">
+  <meta name="citation_author" content="Jingjin Yu">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://kowndinya2000.github.io/trace-site/static/paper/trace.pdf">
+  <title>TRACE | Plan-conditioned retrieval under self-occlusion</title>
+  <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="static/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="static/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="static/css/index.css?v=dfaa25d666">
+  <script src="static/js/app.js?v=63d0810789" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Adapted from the Nerfies research-page template. See NOTICE.md. -->
+<nav class="site-navbar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="brand-text" href="#top" aria-label="TRACE home"><svg class="trace-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 25V7h21M5 25h12V15h9"/><circle cx="26" cy="15" r="3"/></svg>TRACE<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu <span aria-hidden="true">☰</span></button>
+    <div class="navbar-menu" id="nav-menu">
+      <a href="#overview">Overview</a><a href="#architecture">Architecture</a><a href="#demos">Demos</a>
+      <a href="static/paper/trace.pdf" target="_blank" rel="noopener">Paper</a>
+      <a class="nav-code" href="https://github.com/Kowndinya2000/trace-code" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Code</a>
+      <a class="nav-data" href="https://huggingface.co/datasets/Kowndi/trace" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Data</a>
+    </div>
+  </div>
+</nav>
+<main id="main">
+  <header class="hero-head-section" id="top">
+    <div class="container hero-body">
+      <div class="hero-meta"><span class="venue-pill"><span class="status-dot"></span> Preprint · 2026</span></div>
+      <p class="trace-wordmark" aria-hidden="true">TRACE<span>.</span></p>
+      <h1 class="publication-title">Plan-Conditioned Imitation for Robust Object Retrieval<br class="desktop-break"> under Self-Occlusion in Dense Clutter</h1>
+      <p class="publication-authors"><a href="https://kowndinya2000.github.io/">Kowndinya Boyalakuntla</a><span>Ajinkya Pawar</span><a href="https://www.abdeslam.net/">Abdeslam Boularias</a><a href="https://arc-l.github.io/group.html">Jingjin Yu</a></p>
+      <p class="publication-affiliation">Rutgers University</p>
+      <p class="acronym"><strong>T</strong>eacher <strong>R</strong>ollouts for <strong>A</strong>daptive <strong>C</strong>losed-loop <strong>E</strong>xecution</p>
+      <p class="hero-description">A robot’s arm blocks its own view. TRACE uses one initial plan, memory,<br class="desktop-break"> and partial feedback to retrieve a target object from dense clutter.</p>
+      <div class="publication-links">
+        <a class="button primary" href="#overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg>Watch the film <span class="button-detail">2:59</span></a>
+        <a class="button secondary" href="static/paper/trace.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Read the paper <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://github.com/Kowndinya2000/trace-code" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://huggingface.co/datasets/Kowndi/trace" target="_blank" rel="noopener noreferrer">Data <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="overview-section" id="overview" aria-labelledby="overview-heading">
+    <div class="container">
+      <div class="section-topline"><h2 id="overview-heading">Overview</h2><span class="eyebrow">Supplementary video · 2:59</span></div>
+      <div class="film-frame">
+        <div class="film-top"><span><span class="live-dot"></span> TRACE IN ACTION</span><span>UR5e · Real robot experiments</span></div>
+        <video id="overview-video" controls playsinline preload="none" poster="static/images/video-poster.webp?v=a0c22b7bfe" aria-label="TRACE narrated supplementary video, 2 minutes 59 seconds" aria-describedby="film-caption">
+          <source src="static/video/trace-overview.mp4?v=3e8a4a41cb" type="video/mp4">
+          <track kind="captions" src="static/video/trace-overview.vtt?v=aaf2e1c5fd" srclang="en" label="English">
+          Your browser does not support embedded video. <a href="static/video/trace-overview.mp4?v=3e8a4a41cb">Download the supplementary video.</a>
+        </video>
+        <div class="film-chapters" aria-label="Video chapters"><button type="button" data-seek="0"><span>00:00</span> The idea</button><button type="button" data-seek="30"><span>00:30</span> TRACE execution</button><button type="button" data-seek="100"><span>01:40</span> More TRACE scenes</button><button type="button" data-seek="135"><span>02:15</span> Baselines</button></div>
+      </div>
+      <div class="film-caption" id="film-caption"><p>Target retrieval in dense clutter under self-occlusion.</p><div class="film-downloads"><a href="static/video/transcript.txt?v=6a7e99d2ce">Transcript</a><a href="static/video/trace-overview.mp4?v=3e8a4a41cb" download>Download video <span aria-hidden="true">↓</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section architecture-section" id="architecture" aria-labelledby="architecture-heading">
+    <div class="container">
+      <div class="section-heading-row"><div><p class="eyebrow">INSIDE TRACE</p><h2 id="architecture-heading">Training &amp; inference</h2></div></div>
+      <div class="architecture-block">
+        <div class="architecture-tabs" role="tablist" aria-label="Architecture view">
+          <button id="inference-tab" type="button" role="tab" aria-selected="true" aria-controls="inference-panel">Real-world inference</button>
+          <button id="training-tab" type="button" role="tab" aria-selected="false" aria-controls="training-panel" tabindex="-1">Simulation training</button>
+        </div>
+        <div id="inference-panel" class="architecture-panel" role="tabpanel" aria-labelledby="inference-tab">
+          <figure>
+            <a class="architecture-figure" href="static/images/architecture.webp" target="_blank" rel="noopener" aria-label="Open the real-world inference diagram at full resolution">
+              <img src="static/images/architecture.webp" width="3106" height="2346" loading="lazy" alt="A fixed teacher rollout provides local plan context. Partial object observations and robot state update a recurrent student, which selects pushing actions before a final graspability check.">
+              <span>View full resolution <span aria-hidden="true">↗</span></span>
+            </a>
+            <figcaption>One fixed teacher rollout guides a recurrent student using partial observations and memory.</figcaption>
+          </figure>
+        </div>
+        <div id="training-panel" class="architecture-panel" role="tabpanel" aria-labelledby="training-tab" hidden>
+          <figure>
+            <a class="architecture-figure" href="static/images/architecture-training.webp" target="_blank" rel="noopener" aria-label="Open the simulation training diagram at full resolution">
+              <img src="static/images/architecture-training.webp" width="2132" height="3134" loading="lazy" alt="A privileged teacher is trained in simulation and frozen. Behavior cloning initializes the student; DAgger adds teacher supervision on student-visited states with partial observations.">
+              <span>View full resolution <span aria-hidden="true">↗</span></span>
+            </a>
+            <figcaption>Behavior cloning initializes the student; DAgger adds frozen-teacher supervision on student-visited states in simulation.</figcaption>
+          </figure>
+        </div>
+        <p class="perception-note">On the real robot, we estimate object poses from instance masks produced by <a href="https://openaccess.thecvf.com/content_iccv_2017/html/He_Mask_R-CNN_ICCV_2017_paper.html" target="_blank" rel="noopener noreferrer">Mask R-CNN (He et al., ICCV 2017)</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section demos-section" id="demos" aria-labelledby="demos-heading">
+    <div class="container">
+      <div class="section-heading-row"><div><p class="eyebrow">ON THE REAL ROBOT</p><h2 id="demos-heading">Demonstrations</h2></div><p class="section-intro">Choose a method and scene.</p></div>
+      <div class="method-tabs" role="tablist" aria-label="Demonstration method">
+        <button id="trace-tab" type="button" role="tab" aria-selected="true" aria-controls="trace-panel">TRACE</button>
+        <button id="online-teacher-tab" type="button" role="tab" aria-selected="false" aria-controls="online-teacher-panel" tabindex="-1">Online Teacher</button>
+        <button id="replay-tab" type="button" role="tab" aria-selected="false" aria-controls="replay-panel" tabindex="-1">Teacher Replay</button>
+        <button id="pmbs-tab" type="button" role="tab" aria-selected="false" aria-controls="pmbs-panel" tabindex="-1">PMBS</button>
+        <button id="spiral-tab" type="button" role="tab" aria-selected="false" aria-controls="spiral-panel" tabindex="-1">Spiral</button>
+      </div>
+      <p class="gallery-notice" id="demo-status" role="status" hidden></p>
+      <div class="method-panel" id="trace-panel" role="tabpanel" aria-labelledby="trace-tab">
+        <div class="scene-gallery" data-gallery="trace" aria-label="TRACE scene videos">
+          <video class="scene-video" controls playsinline preload="none" src="static/video/01_trace.mp4" poster="static/images/01_trace.webp?v=1d0aa55108" aria-label="TRACE, scene 01">Your browser does not support embedded video. <a href="static/video/01_trace.mp4">Download the recording.</a></video>
+          <p class="scene-outcome" data-outcome="success">Outcome: Success</p>
+          <p class="scene-caption">Scene 01</p>
+        </div>
+        <p class="method-takeaway method-takeaway--trace" aria-describedby="benchmark-context"><span class="takeaway-metrics"><span class="takeaway-metric"><strong>90.0%</strong> success</span><span class="takeaway-metric takeaway-metric--time"><strong>67.3 s</strong> total</span></span><span class="takeaway-comparison"><strong>2.9× faster than Online Teacher</strong>, with no sensing retractions during pushing.</span></p>
+      </div>
+      <div class="method-panel" id="online-teacher-panel" role="tabpanel" aria-labelledby="online-teacher-tab" hidden>
+        <div class="scene-gallery" data-gallery="online-teacher" aria-label="Online Teacher scene videos">
+          <video class="scene-video" controls playsinline preload="none" src="static/video/01_onlineteacher.mp4" poster="static/images/01_onlineteacher.webp?v=9410701544" aria-label="Online Teacher, scene 01">Your browser does not support embedded video. <a href="static/video/01_onlineteacher.mp4">Download the recording.</a></video>
+          <p class="scene-outcome" data-outcome="success">Outcome: Success</p>
+          <p class="scene-caption">Scene 01</p>
+        </div>
+        <p class="method-takeaway" aria-describedby="benchmark-context"><span class="takeaway-metrics"><span class="takeaway-metric"><strong>95.0%</strong> success</span><span class="takeaway-metric takeaway-metric--time"><strong>192.7 s</strong> total</span></span><span class="takeaway-comparison">Highest success, but <strong>2.9× TRACE’s total time</strong> and repeated sensing retractions.</span></p>
+      </div>
+      <div class="method-panel" id="replay-panel" role="tabpanel" aria-labelledby="replay-tab" hidden>
+        <div class="scene-gallery" data-gallery="replay" aria-label="Teacher Replay scene videos">
+          <video class="scene-video" controls playsinline preload="none" src="static/video/01_replay.mp4" poster="static/images/01_replay.webp?v=787faa8c7a" aria-label="Teacher Replay, scene 01">Your browser does not support embedded video. <a href="static/video/01_replay.mp4">Download the recording.</a></video>
+          <p class="scene-outcome" data-outcome="failure">Outcome: Failure</p>
+        </div>
+        <p class="method-takeaway" aria-describedby="benchmark-context"><span class="takeaway-metrics"><span class="takeaway-metric"><strong>47.5%</strong> success</span><span class="takeaway-metric takeaway-metric--time"><strong>49.5 s</strong> total</span></span><span class="takeaway-comparison">Faster than TRACE, but <strong>42.5 percentage points less success</strong> without execution feedback.</span></p>
+      </div>
+      <div class="method-panel" id="pmbs-panel" role="tabpanel" aria-labelledby="pmbs-tab" hidden>
+        <div class="scene-gallery" data-gallery="pmbs" aria-label="PMBS scene videos">
+          <video class="scene-video" controls playsinline preload="none" src="static/video/01_pmbs.mp4" poster="static/images/01_pmbs.webp?v=778b9decba" aria-label="PMBS, scene 01">Your browser does not support embedded video. <a href="static/video/01_pmbs.mp4">Download the recording.</a></video>
+          <p class="scene-outcome" data-outcome="failure">Outcome: Failure · Timeout</p>
+          <p class="scene-caption">Scene 01</p>
+        </div>
+        <p class="method-takeaway" aria-describedby="benchmark-context"><span class="takeaway-metrics"><span class="takeaway-metric"><strong>85.0%</strong> success</span><span class="takeaway-metric takeaway-metric--time"><strong>141.1 s</strong> total</span></span><span class="takeaway-comparison">5 percentage points less success and <strong>2.1× TRACE’s total time</strong>, with complete-scene sensing.</span></p>
+      </div>
+      <div class="method-panel" id="spiral-panel" role="tabpanel" aria-labelledby="spiral-tab" hidden>
+        <div class="scene-gallery" data-gallery="spiral" aria-label="Spiral scene videos">
+          <video class="scene-video" controls playsinline preload="none" src="static/video/01_spiral.mp4" poster="static/images/01_spiral.webp?v=1f72ad88b0" aria-label="Spiral, scene 01">Your browser does not support embedded video. <a href="static/video/01_spiral.mp4">Download the recording.</a></video>
+          <p class="scene-outcome" data-outcome="failure">Outcome: Failure · Out of workspace (OOW)</p>
+          <p class="scene-caption">Scene 01</p>
+        </div>
+        <p class="method-takeaway" aria-describedby="benchmark-context"><span class="takeaway-metrics"><span class="takeaway-metric"><strong>77.5%</strong> success</span><span class="takeaway-metric takeaway-metric--time"><strong>44.4 s</strong> total</span></span><span class="takeaway-comparison">Fastest, but <strong class="takeaway-oow">17.5% out-of-workspace (OOW) failures</strong> versus 0% for TRACE.</span></p>
+      </div>
+      <p class="benchmark-context" id="benchmark-context">Selected videos; statistics cover the full hardware benchmark: 20 scenes × 2 trials per method. Total time includes initialization/planning, execution, and grasp/lift.</p>
+      <noscript><p class="gallery-notice">Enable JavaScript to browse all methods and scenes. <a href="static/video/01_onlineteacher.mp4">Watch Online Teacher, scene 01.</a></p></noscript>
+    </div>
+  </section>
+
+  <section class="section citation-section" id="citation" aria-labelledby="citation-heading">
+    <div class="container"><h2 id="citation-heading">Citation</h2>
+      <pre class="citation-text"><code>@misc{boyalakuntla2026trace,
+  title = {Plan-Conditioned Imitation for Robust Object Retrieval under Self-Occlusion in Dense Clutter},
+  author = {Boyalakuntla, Kowndinya and Pawar, Ajinkya and Boularias, Abdeslam and Yu, Jingjin},
+  year = {2026},
+  url = {https://kowndinya2000.github.io/trace-site/}
+}
+</code></pre>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand-text" href="#top">TRACE<span class="brand-dot">.</span></a><p>Preprint · 2026 · Rutgers University</p><a href="#top">Back to top ↑</a></div><p class="template-credit">Website adapted from <a href="https://nerfies.github.io/" rel="noreferrer">Nerfies</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a></p></footer>
+</body>
+</html>

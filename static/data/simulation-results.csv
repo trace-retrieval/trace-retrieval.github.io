@@ -1,0 +1,9 @@
+method,online_information,success_percent,ci95_lower,ci95_upper,workspace_violation_percent,budget_failure_percent
+Teacher Replay,None,43.4,39.1,48,6.3,50.3
+Online Teacher,Complete,96.7,95.1,98,3.3,0
+TRACE,Partial + plan,90.7,88.9,92.6,7.2,2.1
+PMBS,Complete,88.1,85.1,90.8,,11.9
+Spiral,Target position,80.2,76.9,83.8,19.6,0.2
+TRACE-BC,Partial + plan,66.7,63.7,69.8,15.3,18
+Serial MCTS,Complete,44,40.1,48.1,,56
+Straight Line,Target position,0.4,0,1,0,99.6

@@ -1,0 +1,17 @@
+{
+  "packet_count": 5370,
+  "packets_and_timestamps_sha256": "9af3346b9b0ed0e8f96ebe9f25a141889057892443e4c5fd2deec0d71dca2c77",
+  "status": "locked",
+  "source_commit": "e226d68b47ad0aef357ff3c8525fd07a7f23d73f",
+  "duration_seconds": 179,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapter_starts": [
+    0,
+    30,
+    100,
+    135
+  ],
+  "instruction": "Preserve all video packets and timestamps. Only audio, captions, and transcript may change unless the user explicitly unlocks the picture."
+}

@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:03.840
+TRACE retrieves objects from clutter under arm occlusion.
+
+00:00:04.100 --> 00:00:07.840
+Withdrawing the arm restores visibility, but interrupts manipulation.
+
+00:00:08.100 --> 00:00:10.840
+The teacher plans once in simulation.
+
+00:00:11.100 --> 00:00:14.840
+The plan-conditioned student uses memory and partial feedback.
+
+00:00:15.100 --> 00:00:17.840
+Pushing continues without sensing retractions.
+
+00:00:18.100 --> 00:00:21.840
+TRACE achieves ninety percent success in hardware trials.
+
+00:00:22.100 --> 00:00:24.840
+Pushing needs no online search or simulation.
+
+00:00:25.100 --> 00:00:28.840
+The plan stays fixed; actions adapt as objects move.
+
+00:00:29.100 --> 00:00:29.840
+Demonstrations.
+
+00:00:30.250 --> 00:00:35.873
+TRACE uses one privileged rollout to guide feedback control under self occlusion.
+
+00:00:35.873 --> 00:00:39.622
+A complete initial observation initializes the digital twin,
+
+00:00:39.622 --> 00:00:44.307
+and the teacher produces a nominal plan before manipulation begins.
+
+00:00:44.307 --> 00:00:48.525
+During pushing, the recurrent student combines partial object observations,
+
+00:00:48.525 --> 00:00:54.148
+robot proprioception, memory, and local rollout context to select its next action.
+
+00:00:54.148 --> 00:01:00.708
+The nominal plan stays fixed, while the executed actions adapt to the observed scene.
+
+00:01:00.708 --> 00:01:04.925
+As contact moves objects away from their predicted positions,
+
+00:01:04.925 --> 00:01:08.205
+the controller can depart from the plan.
+
+00:01:08.205 --> 00:01:14.297
+The observation history records object visibility and the age of the last observation,
+
+00:01:14.297 --> 00:01:18.045
+retaining context when the arm blocks the view.
+
+00:01:18.045 --> 00:01:24.137
+No online teacher queries, simulator rollouts, or sensing retractions are required during pushing.
+
+00:01:24.137 --> 00:01:27.417
+The rollout defines the scene-specific execution horizon.
+
+00:01:27.417 --> 00:01:32.103
+The arm withdraws for the final graspability check before retrieval.
+
+00:01:32.103 --> 00:01:37.726
+This separates closed-loop pushing under partial visibility from the final check that
+
+00:01:37.726 --> 00:01:39.600
+requires a clear view.
+
+00:01:40.250 --> 00:01:42.785
+Here is TRACE across additional cluttered
+scenes.
+
+00:01:45.500 --> 00:01:49.297
+Each scene begins with its own teacher
+generated plan. The
+
+00:01:49.297 --> 00:01:52.714
+student adapts its actions using partial
+observations and memory.
+
+00:01:53.000 --> 00:01:55.276
+The initial plan stays fixed, while
+
+00:01:55.276 --> 00:01:57.551
+execution responds to the changing scene.
+
+00:01:58.250 --> 00:02:00.643
+Across forty hardware trials, TRACE
+
+00:02:00.643 --> 00:02:03.036
+achieves ninety percent retrieval success.
+
+00:02:04.500 --> 00:02:07.145
+No workspace violations or sensing
+retractions
+
+00:02:07.145 --> 00:02:10.231
+during pushing were observed in these
+trials.
+
+00:02:10.750 --> 00:02:13.705
+Its remaining failures reach the execution
+budget.
+
+00:02:15.250 --> 00:02:19.565
+Now, the baselines. Teacher Replay follows
+a fixed plan without
+
+00:02:19.565 --> 00:02:23.448
+object feedback, so it cannot correct
+contact induced deviations.
+
+00:02:23.750 --> 00:02:27.792
+The Online Teacher updates its actions
+from complete scene
+
+00:02:27.792 --> 00:02:31.833
+observations, but repeatedly retracts the
+arm to restore visibility.
+
+00:02:32.500 --> 00:02:36.243
+P M B S uses tree search and batched
+
+00:02:36.243 --> 00:02:39.986
+simulation. Repeated planning and scene
+reacquisition increase total time.
+
+00:02:41.250 --> 00:02:44.431
+Spiral uses target centered pushing. It is
+fastest
+
+00:02:44.431 --> 00:02:47.612
+on average, but less reliable in tight
+clutter.
+
+00:02:48.250 --> 00:02:51.928
+TRACE is two point nine times faster end
+to end,
+
+00:02:51.928 --> 00:02:55.606
+with ninety percent success versus the
+Online Teacher's ninety five.
+
+00:02:57.100 --> 00:02:58.840
+Plan conditioned retrieval.

@@ -1,0 +1,25 @@
+TRACE retrieves objects from clutter under arm occlusion.
+
+Withdrawing the arm restores visibility, but interrupts manipulation.
+
+The teacher plans once in simulation.
+
+The plan-conditioned student uses memory and partial feedback.
+
+Pushing continues without sensing retractions.
+
+TRACE achieves ninety percent success in hardware trials.
+
+Pushing needs no online search or simulation.
+
+The plan stays fixed; actions adapt as objects move.
+
+Demonstrations.
+
+TRACE uses one privileged rollout to guide feedback control under self occlusion. A complete initial observation initializes the digital twin, and the teacher produces a nominal plan before manipulation begins. During pushing, the recurrent student combines partial object observations, robot proprioception, memory, and local rollout context to select its next action. The nominal plan stays fixed, while the executed actions adapt to the observed scene. As contact moves objects away from their predicted positions, the controller can depart from the plan. The observation history records object visibility and the age of the last observation, retaining context when the arm blocks the view. No online teacher queries, simulator rollouts, or sensing retractions are required during pushing. The rollout defines the scene-specific execution horizon. The arm withdraws for the final graspability check before retrieval. This separates closed-loop pushing under partial visibility from the final check that requires a clear view.
+
+Here is TRACE across additional cluttered scenes. Each scene begins with its own teacher generated plan. The student adapts its actions using partial observations and memory. The initial plan stays fixed, while execution responds to the changing scene. Across forty hardware trials, TRACE achieves ninety percent retrieval success. No workspace violations or sensing retractions during pushing were observed in these trials. Its remaining failures reach the execution budget.
+
+Now, the baselines. Teacher Replay follows a fixed plan without object feedback, so it cannot correct contact induced deviations. The Online Teacher updates its actions from complete scene observations, but repeatedly retracts the arm to restore visibility. P M B S uses tree search and batched simulation. Repeated planning and scene reacquisition increase total time. Spiral uses target centered pushing. It is fastest on average, but less reliable in tight clutter. TRACE is two point nine times faster end to end, with ninety percent success versus the Online Teacher's ninety five.
+
+Plan conditioned retrieval.

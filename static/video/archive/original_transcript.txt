@@ -1,0 +1,25 @@
+TRACE retrieves objects from clutter under arm occlusion.
+
+Withdrawing the arm restores visibility, but interrupts manipulation.
+
+The teacher plans once in simulation.
+
+The plan-conditioned student uses memory and partial feedback.
+
+Pushing continues without sensing retractions.
+
+TRACE achieves ninety percent success in hardware trials.
+
+Pushing needs no online search or simulation.
+
+The plan stays fixed; actions adapt as objects move.
+
+Demonstrations.
+
+Teacher Replay executes a fixed plan without object feedback. It cannot correct contact-induced deviations and may leave the target ungraspable. The online teacher achieves the highest hardware success, but repeatedly retracts the arm to recover complete scene state. P M B S, the previous state of the art, combines tree search with batched simulation; planning and scene reacquisition increase end to end time. Spiral is a target-centric pushing heuristic. It requires an updated target pose at each decision and retracts the arm when the target is occluded. Spiral is fastest on average, but unreliable in these tight workspaces, with lower success than TRACE and a substantial rate of out of workspace failures.
+
+TRACE uses one privileged rollout to guide feedback control under self occlusion. A complete initial observation initializes the digital twin, and the teacher produces a nominal plan before manipulation begins. During pushing, the recurrent student combines partial object observations, robot proprioception, memory, and local rollout context to select its next action. The nominal plan stays fixed, while the executed actions adapt to the observed scene. As contact moves objects away from their predicted positions, the controller can depart from the plan. The observation history records object visibility and the age of the last observation, retaining context when the arm blocks the view. No online teacher queries, simulator rollouts, or sensing retractions are required during pushing. The rollout defines the scene-specific execution horizon. The arm withdraws for the final graspability check before retrieval. This separates closed-loop pushing under partial visibility from the final check that requires a clear view.
+
+Across the hardware benchmark, TRACE achieves ninety percent success, with no observed workspace violations or sensing retractions during pushing. Its remaining failures reach the execution budget. TRACE is more reliable than replay and Spiral, and improves both success and total time over P M B S. Spiral remains faster on average. The online teacher reaches ninety five percent success; TRACE is two point nine times faster end to end. One initial plan supports adaptive execution without repeated complete-scene reacquisition.
+
+Plan conditioned retrieval.

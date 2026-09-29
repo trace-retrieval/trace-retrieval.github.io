@@ -1,0 +1,347 @@
+{
+  "replay": [
+    {
+      "label": "Scene 01",
+      "src": "static/video/01_replay.mp4",
+      "poster": "static/images/01_replay.webp?v=787faa8c7a",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 1,
+      "outcome": "failure"
+    },
+    {
+      "label": "Scene 02",
+      "src": "static/video/02_replay.mp4",
+      "poster": "static/images/02_replay.webp?v=698e9f73cf",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 2,
+      "outcome": "failure"
+    },
+    {
+      "label": "Scene 03",
+      "src": "static/video/03_replay.mp4",
+      "poster": "static/images/03_replay.webp?v=0c2442fa22",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 3,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 04",
+      "src": "static/video/04_replay.mp4",
+      "poster": "static/images/04_replay.webp?v=40e9a7be5d",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 4,
+      "outcome": "failure"
+    },
+    {
+      "label": "Scene 05",
+      "src": "static/video/05_replay.mp4",
+      "poster": "static/images/05_replay.webp?v=3fcd6ff820",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 5,
+      "outcome": "failure"
+    },
+    {
+      "label": "Scene 07",
+      "src": "static/video/07_replay.mp4",
+      "poster": "static/images/07_replay.webp?v=f7379520a6",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 7,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 10",
+      "src": "static/video/10_replay.mp4",
+      "poster": "static/images/10_replay.webp?v=0780db1c85",
+      "caption": null,
+      "captions": null,
+      "recorded_scene": 10,
+      "outcome": "success"
+    }
+  ],
+  "online-teacher": [
+    {
+      "label": "Scene 01",
+      "src": "static/video/01_onlineteacher.mp4",
+      "poster": "static/images/01_onlineteacher.webp?v=9410701544",
+      "caption": "Scene 01",
+      "captions": null,
+      "recorded_scene": 1,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 02",
+      "src": "static/video/02_onlineteacher.mp4",
+      "poster": "static/images/02_onlineteacher.webp?v=c415d5cb97",
+      "caption": "Scene 02",
+      "captions": null,
+      "recorded_scene": 2,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 03",
+      "src": "static/video/03_onlineteacher.mp4",
+      "poster": "static/images/03_onlineteacher.webp?v=635181478c",
+      "caption": "Scene 03",
+      "captions": null,
+      "recorded_scene": 3,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 04",
+      "src": "static/video/04_onlineteacher.mp4",
+      "poster": "static/images/04_onlineteacher.webp?v=b516689a60",
+      "caption": "Scene 04",
+      "captions": null,
+      "recorded_scene": 4,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 05",
+      "src": "static/video/failure_onlineteacher.mp4",
+      "poster": "static/images/failure_onlineteacher.webp?v=0339906c9c",
+      "caption": "Scene 05",
+      "captions": null,
+      "recorded_scene": 5,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 06",
+      "src": "static/video/05_onlineteacher.mp4",
+      "poster": "static/images/05_onlineteacher.webp?v=454cf3c8ae",
+      "caption": "Scene 06",
+      "captions": null,
+      "recorded_scene": 6,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 07",
+      "src": "static/video/06_onlineteacher.mp4",
+      "poster": "static/images/06_onlineteacher.webp?v=fadd755ec5",
+      "caption": "Scene 07",
+      "captions": null,
+      "recorded_scene": 7,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 08",
+      "src": "static/video/07_onlineteacher.mp4",
+      "poster": "static/images/07_onlineteacher.webp?v=c098355bc8",
+      "caption": "Scene 08",
+      "captions": null,
+      "recorded_scene": 8,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 10",
+      "src": "static/video/08_onlineteacher.mp4",
+      "poster": "static/images/08_onlineteacher.webp?v=c348e382ad",
+      "caption": "Scene 10",
+      "captions": null,
+      "recorded_scene": 10,
+      "outcome": "success"
+    }
+  ],
+  "trace": [
+    {
+      "label": "Scene 01",
+      "src": "static/video/01_trace.mp4",
+      "poster": "static/images/01_trace.webp?v=1d0aa55108",
+      "caption": "Scene 01",
+      "captions": null,
+      "recorded_scene": 1,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 02",
+      "src": "static/video/02_trace.mp4",
+      "poster": "static/images/02_trace.webp?v=d42e7db9d8",
+      "caption": "Scene 02",
+      "captions": null,
+      "recorded_scene": 2,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 03",
+      "src": "static/video/03_trace.mp4",
+      "poster": "static/images/03_trace.webp?v=1c7200a319",
+      "caption": "Scene 03",
+      "captions": null,
+      "recorded_scene": 3,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 04",
+      "src": "static/video/04_trace.mp4",
+      "poster": "static/images/04_trace.webp?v=0da5b42bd9",
+      "caption": "Scene 04",
+      "captions": null,
+      "recorded_scene": 4,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 05",
+      "src": "static/video/failure_trace.mp4",
+      "poster": "static/images/failure_trace.webp?v=af2f256b67",
+      "caption": "Scene 05",
+      "captions": null,
+      "recorded_scene": 5,
+      "outcome": "failure"
+    },
+    {
+      "label": "Scene 06",
+      "src": "static/video/05_trace.mp4",
+      "poster": "static/images/05_trace.webp?v=8a3b9d243d",
+      "caption": "Scene 06",
+      "captions": null,
+      "recorded_scene": 6,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 07",
+      "src": "static/video/06_trace.mp4",
+      "poster": "static/images/06_trace.webp?v=e78b2ac9a4",
+      "caption": "Scene 07",
+      "captions": null,
+      "recorded_scene": 7,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 08",
+      "src": "static/video/07_trace.mp4",
+      "poster": "static/images/07_trace.webp?v=b08f22ed7b",
+      "caption": "Scene 08",
+      "captions": null,
+      "recorded_scene": 8,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 10",
+      "src": "static/video/08_trace.mp4",
+      "poster": "static/images/08_trace.webp?v=e462e8f254",
+      "caption": "Scene 10",
+      "captions": null,
+      "recorded_scene": 10,
+      "outcome": "success"
+    }
+  ],
+  "pmbs": [
+    {
+      "label": "Scene 01",
+      "src": "static/video/01_pmbs.mp4",
+      "poster": "static/images/01_pmbs.webp?v=778b9decba",
+      "caption": "Scene 01",
+      "captions": null,
+      "recorded_scene": 1,
+      "outcome": "failure",
+      "failure_reason": "Timeout"
+    },
+    {
+      "label": "Scene 02",
+      "src": "static/video/02_pmbs.mp4",
+      "poster": "static/images/02_pmbs.webp?v=5657372d61",
+      "caption": "Scene 02",
+      "captions": null,
+      "recorded_scene": 2,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 03",
+      "src": "static/video/03_pmbs.mp4",
+      "poster": "static/images/03_pmbs.webp?v=928763dd93",
+      "caption": "Scene 03",
+      "captions": null,
+      "recorded_scene": 3,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 04",
+      "src": "static/video/04_pmbs.mp4",
+      "poster": "static/images/04_pmbs.webp?v=c20bd5dfd5",
+      "caption": "Scene 04",
+      "captions": null,
+      "recorded_scene": 4,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 05",
+      "src": "static/video/05_pmbs.mp4",
+      "poster": "static/images/05_pmbs.webp?v=b077f44441",
+      "caption": "Scene 05",
+      "captions": null,
+      "recorded_scene": 5,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 10",
+      "src": "static/video/06_pmbs.mp4",
+      "poster": "static/images/06_pmbs.webp?v=8ae3330dc9",
+      "caption": "Scene 10",
+      "captions": null,
+      "recorded_scene": 10,
+      "outcome": "success"
+    }
+  ],
+  "spiral": [
+    {
+      "label": "Scene 01",
+      "src": "static/video/01_spiral.mp4",
+      "poster": "static/images/01_spiral.webp?v=1f72ad88b0",
+      "caption": "Scene 01",
+      "captions": null,
+      "recorded_scene": 1,
+      "outcome": "failure",
+      "failure_reason": "Out of workspace (OOW)"
+    },
+    {
+      "label": "Scene 02",
+      "src": "static/video/02_spiral.mp4",
+      "poster": "static/images/02_spiral.webp?v=779be90205",
+      "caption": "Scene 02",
+      "captions": null,
+      "recorded_scene": 2,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 03",
+      "src": "static/video/03_spiral.mp4",
+      "poster": "static/images/03_spiral.webp?v=6a9f13efa4",
+      "caption": "Scene 03",
+      "captions": null,
+      "recorded_scene": 3,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 04",
+      "src": "static/video/04_spiral.mp4",
+      "poster": "static/images/04_spiral.webp?v=35c4b36017",
+      "caption": "Scene 04",
+      "captions": null,
+      "recorded_scene": 4,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 05",
+      "src": "static/video/05_spiral.mp4",
+      "poster": "static/images/05_spiral.webp?v=98fafb8a08",
+      "caption": "Scene 05",
+      "captions": null,
+      "recorded_scene": 5,
+      "outcome": "success"
+    },
+    {
+      "label": "Scene 10",
+      "src": "static/video/06_spiral.mp4",
+      "poster": "static/images/06_spiral.webp?v=a86673f11a",
+      "caption": "Scene 10",
+      "captions": null,
+      "recorded_scene": 10,
+      "outcome": "success"
+    }
+  ]
+}
