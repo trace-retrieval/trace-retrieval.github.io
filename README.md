@@ -6,7 +6,7 @@ TRACE: Teacher Rollouts for Adaptive Closed-loop Execution. 2026.
 
 Kowndinya Boyalakuntla¹, Ajinkya Pawar², Abdeslam Boularias¹, Jingjin Yu¹
 
-¹ Department of Computer Science, Rutgers University, 08854 New Brunswick, USA.
+¹ Rutgers University
 
 ² Indian Institute of Technology Bombay.
 
