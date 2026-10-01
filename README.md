@@ -11,7 +11,7 @@ Kowndinya Boyalakuntla¹, Ajinkya Pawar², Abdeslam Boularias¹, Jingjin Yu¹
 ² Indian Institute of Technology Bombay.
 
 [Website](https://trace-retrieval.github.io/) ·
-[Paper](static/paper/trace.pdf) ·
+[Paper](https://arxiv.org/abs/2609.38857) ·
 [Code](https://github.com/Kowndinya2000/trace-code) ·
 [Data](https://huggingface.co/datasets/Kowndi/trace)
 
